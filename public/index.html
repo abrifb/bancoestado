@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BancoEstado - Ejecutivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Administración BancoEstado</h1>
+
+   <section>
+    <h2>Listados</h2>
+    <button onclick="listarClientes()"> Listar todos los clientes</button>
+    <button onclick="listarClientesRut()"> Clientes con Cuenta RUT</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Agregar Cliente</h2>
+
+        <h3>Cliente + Cuenta RUT</h3>
+        <input type="text" id="nombreRut" placeholder="Nombre">
+        <input type="text" id="rutRut" placeholder="RUT">
+        <input type="number" id="saldoRut" placeholder="Saldo inicial">
+        <button onclick="crearClienteRut()">Agregar</button>
+
+        <h3>Cliente + Cuenta AHORRO</h3>
+        <input type="text" id="nombreAhorro" placeholder="Nombre">
+        <input type="text" id="rutAhorro" placeholder="RUT">
+        <input type="number" id="saldoAhorro" placeholder="Saldo inicial">
+        <button onclick="crearClienteAhorro()">Agregar</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Agregar Cuenta a Cliente Existente</h2>
+
+        <h3>Agregar Cuenta RUT</h3>
+        <input type="number" id="idRutExistente" placeholder="ID Cliente">
+        <input type="number" id="saldoNuevaRut" placeholder="Saldo inicial">
+        <button onclick="agregarRut()">Agregar RUT</button>
+
+        <h3>Agregar Cuenta AHORRO</h3>
+        <input type="number" id="idAhorroExistente" placeholder="ID Cliente">
+        <input type="number" id="saldoNuevoAhorro" placeholder="Saldo inicial">
+        <button onclick="agregarAhorro()">Agregar Ahorro</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Eliminaciones</h2>
+
+        <h3>Eliminar Cliente</h3>
+        <input type="number" id="idEliminarCliente" placeholder="ID Cliente">
+        <button onclick="eliminarCliente()">Eliminar</button>
+
+        <h3>Eliminar Cuenta RUT</h3>
+        <input type="number" id="idEliminarRut" placeholder="ID Cliente">
+        <button onclick="eliminarRut()">Eliminar RUT</button>
+
+        <h3>Eliminar Cuenta AHORRO</h3>
+        <input type="number" id="idEliminarAhorro" placeholder="ID Cliente">
+        <input type="number" id="numeroAhorro" placeholder="Número Cuenta Ahorro">
+        <button onclick="eliminarAhorro()">Eliminar Ahorro</button>
+    </section>
+
+    <hr>
+
+    <h2>Resultado</h2>
+    <pre id="resultado"></pre>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "clientes": [
+    {
+      "id": 1772669569710,
+      "nombre": "Abraham ",
+      "rut": "18672941-2",
+      "cuentaRut": {
+        "numero": 1772669569710,
+        "saldo": 50
+      },
+      "cuentasAhorro": [
+        {
+          "numero": 1772669605617,
+          "saldo": 600
+        },
+        {
+          "numero": 1772669629189,
+          "saldo": 600000
+        }
+      ]
+    },
+    {
+      "id": 1772669650476,
+      "nombre": "Abraham ",
+      "rut": "18672941-2",
+      "cuentaRut": {
+        "numero": 1772669650476,
+        "saldo": 50
+      },
+      "cuentasAhorro": []
+    }
+  ]
+}

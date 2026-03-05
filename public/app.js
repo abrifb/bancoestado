@@ -4,7 +4,7 @@ function manejarRespuesta(respuesta) {
     if (respuesta.mensaje) {
         alert(respuesta.mensaje);
     } else if (respuesta.error) {
-        alert("❌ Error: " + respuesta.error);
+        alert("Error: " + respuesta.error);
     } else {
         mostrar(respuesta);
     }
